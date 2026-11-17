@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol Grife | Carrinho</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Futebol Grife</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <div class="acoes-header">
+
+            <button id="tema" aria-label="Mudar tema">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button id="abrirCarrinho" aria-label="Abrir carrinho">
+                <i data-lucide="shopping-cart"></i>
+                <span id="quantidadeCarrinho">0</span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Meu Carrinho</h2>
+
+        <p>Confira os produtos que você adicionou.</p>
+
+        <!-- LISTA DE PRODUTOS -->
+        <section id="listaCarrinho">
+            <!-- Os produtos serão adicionados pelo JavaScript -->
+        </section>
+
+        <!-- RESUMO DA COMPRA -->
+        <div class="resumoCarrinho">
+
+            <h3>
+                Total:
+                <span id="totalCarrinho">R$ 0,00</span>
+            </h3>
+
+            <button id="finalizarCompra">
+                Finalizar compra
+            </button>
+
+        </div>
+
+        <!-- JANELA DE PAGAMENTO -->
+<dialog id="dialogPagamento">
+
+    <h2>Pagamento via PIX</h2>
+
+    <p>Escaneie o QR Code para simular o pagamento.</p>
+
+    <img src="img/qrcode.jpg" alt="QR Code fictício para pagamento" class="qr-pagamento">
+
+    <p class="aviso-pagamento">QR Code fictício — apenas demonstração</p>
+
+    <h3>
+        Total: <span id="totalPagamento">R$ 0,00</span>
+    </h3>
+
+    <p>Efetuou o pagamento?</p>
+
+    <div class="botoes-pagamento">
+        <button id="pagamentoSim">Sim</button>
+        <button id="pagamentoNao">Não</button>
+    </div>
+
+    </dialog>   
+    </main>
+
+    <!-- BIBLIOTECA DE ÍCONES -->
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

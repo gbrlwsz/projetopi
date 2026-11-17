@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol Grife | Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Futebol Grife</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <div class="acoes-header">
+            <button id="tema" aria-label="Mudar tema">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button id="abrirCarrinho" aria-label="Abrir carrinho">
+                <i data-lucide="shopping-cart"></i>
+                <span id="quantidadeCarrinho">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Nossos Produtos</h2>
+            <p>Encontre os melhores artigos para seu futebol!</p>
+        </section>
+
+        <!-- FILTRO DE CATEGORIAS -->
+        <div class="filtros">
+            <label for="categoria">Filtrar por:</label>
+
+            <select id="categoria">
+                <option value="todos">Todos os produtos</option>
+                <option value="chuteiras">Chuteiras</option>
+                <option value="vestuario">Vestuário</option>
+                <option value="equipamentos">Equipamentos</option>
+                <option value="acessorios">Acessórios</option>
+            </select>
+        </div>
+
+        <section class="produtos-grid">
+
+            <!-- CHUTEIRAS -->
+
+            <article class="produto"
+                     data-categoria="chuteiras"
+                     data-descricao="Domine o campo com a Chuteira Adidas Kaká Predator Club! Projetada para oferecer controle de bola, tração e conforto, conta com cabedal sintético e têxtil, além de ajuste firme com cadarços. As tecnologias Controlframe, Hybridtouch e StrikeScale proporcionam estabilidade, toque preciso e melhor desempenho. Seu solado em TPU com travas altas garante aderência e agilidade em campo, ideal para quem busca elevar seu nível de jogo.">
+                <div class="produto-imagem">
+                    <img src="img/predator.jpg" alt="Chuteira Adidas Predator">
+                </div>
+                <div class="produto-info">
+                    <h3>Chuteira Adidas Predator</h3>
+                    <p>R$ 399,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="chuteiras"
+                     data-descricao="A Nike Mercurial foi desenvolvida para jogadores que valorizam velocidade e agilidade. Seu cabedal leve oferece ajuste confortável, enquanto o solado proporciona tração para mudanças rápidas de direção. Ideal para atletas que buscam explosão e precisão durante as partidas.">
+                <div class="produto-imagem">
+                    <img src="img/mercurial.jpg" alt="Chuteira Nike Mercurial">
+                </div>
+                <div class="produto-info">
+                    <h3>Chuteira Nike Mercurial</h3>
+                    <p>R$ 549,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="chuteiras"
+                     data-descricao="A Adidas Copa combina um estilo clássico com conforto e controle de bola. Seu cabedal foi desenvolvido para proporcionar um toque preciso, enquanto o solado ajuda na estabilidade durante os movimentos. Uma ótima escolha para quem valoriza técnica e segurança em campo.">
+                <div class="produto-imagem">
+                    <img src="img/copa.jpg" alt="Chuteira Adidas Copa">
+                </div>
+                <div class="produto-info">
+                    <h3>Chuteira Adidas Copa</h3>
+                    <p>R$ 429,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="chuteiras"
+                     data-descricao="A Puma Future oferece flexibilidade e liberdade de movimentos para jogadores criativos. Seu design proporciona ajuste firme aos pés, enquanto o solado favorece arrancadas e mudanças de direção. Indicada para quem busca conforto, agilidade e controle durante o jogo.">
+                <div class="produto-imagem">
+                    <img src="img/puma-future.png" alt="Chuteira Puma Future">
+                </div>
+                <div class="produto-info">
+                    <h3>Chuteira Puma Future</h3>
+                    <p>R$ 479,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="chuteiras"
+                     data-descricao="A Nike Tiempo é uma chuteira indicada para jogadores que procuram conforto e precisão. Seu cabedal oferece contato firme com a bola e o solado ajuda a manter a estabilidade. Ideal para passes, finalizações e movimentos seguros durante as partidas.">
+                <div class="produto-imagem">
+                    <img src="img/tiempo.jpg" alt="Chuteira Nike Tiempo">
+                </div>
+                <div class="produto-info">
+                    <h3>Chuteira Nike Tiempo</h3>
+                    <p>R$ 459,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+
+            <!-- VESTUÁRIO -->
+
+            <article class="produto"
+                     data-categoria="vestuario"
+                     data-descricao="Camisa do Real Madrid confortável, ideal para torcer pelo seu time ou praticar esportes. Seu tecido leve oferece liberdade de movimento e ajuda a proporcionar conforto durante o uso. Uma excelente escolha para os apaixonados pelo futebol e pelo clube espanhol.">
+                <div class="produto-imagem">
+                    <img src="img/realmadrid.jpg" alt="Camisa Real Madrid">
+                </div>
+                <div class="produto-info">
+                    <h3>Camisa Real Madrid</h3>
+                    <p>R$ 399,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="vestuario"
+                     data-descricao="A camisa do Corinthians é ideal para os torcedores que querem demonstrar sua paixão pelo clube. Produzida com tecido leve e confortável, pode ser utilizada tanto no dia a dia quanto durante atividades esportivas.">
+                <div class="produto-imagem">
+                    <img src="img/corinthians.jpg" alt="Camisa Corinthians">
+                </div>
+                <div class="produto-info">
+                    <h3>Camisa Corinthians</h3>
+                    <p>R$ 329,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="vestuario"
+                     data-descricao="Leve o estilo do futebol para o seu dia a dia com o agasalho Tiro 26 Essentials. A parte superior possui uma modelagem justa, enquanto a parte inferior possui uma modelagem padrão para que você tenha um visual estiloso e moderno que funciona dentro e fora do campo de futebol.">
+                <div class="produto-imagem">
+                    <img src="img/conja.jpg" alt="Conjunto Adidas">
+                </div>
+                <div class="produto-info">
+                    <h3>Camisa Palmeiras</h3>
+                    <p>R$ 499,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="vestuario"
+                     data-descricao="A camisa do São Paulo é uma ótima opção para os torcedores que valorizam conforto e identidade com o clube. Seu tecido é leve e adequado para o uso diário, oferecendo praticidade para acompanhar partidas ou realizar atividades esportivas.">
+                <div class="produto-imagem">
+                    <img src="img/saopaulo.jpg" alt="Camisa São Paulo">
+                </div>
+                <div class="produto-info">
+                    <h3>Camisa São Paulo</h3>
+                    <p>R$ 319,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="vestuario"
+                     data-descricao="A camisa do Milan traz o estilo tradicional do futebol italiano. Desenvolvida para oferecer conforto e liberdade de movimentos, é ideal para torcedores e amantes do esporte. Uma peça que combina identidade esportiva e uso no dia a dia.">
+                <div class="produto-imagem">
+                    <img src="img/milan.jpg" alt="Camisa Milan">
+                </div>
+                <div class="produto-info">
+                    <h3>Camisa Milan</h3>
+                    <p>R$ 359,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+
+            <!-- EQUIPAMENTOS -->
+
+            <article class="produto"
+                     data-categoria="equipamentos"
+                     data-descricao="Bola de futsal indicada para partidas em quadras, oferecendo resistência, precisão e bom controle. Seu material foi desenvolvido para suportar o uso durante treinos e jogos, sendo uma boa escolha para jogadores que procuram qualidade e desempenho.">
+                <div class="produto-imagem">
+                    <img src="img/bola-futal.jpg" alt="Bola de Futsal Nike Maestro">
+                </div>
+                <div class="produto-info">
+                    <h3>Bola de Futsal</h3>
+                    <p>R$ 219,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="equipamentos"
+                     data-descricao="Bola de futebol de campo indicada para treinos e partidas recreativas. Sua estrutura oferece resistência e bom controle nos passes e finalizações. Ideal para jogadores que buscam uma bola versátil para diferentes momentos do jogo.">
+                <div class="produto-imagem">
+                    <img src="img/bola-campo.jpg" alt="Bola de Futebol de Campo">
+                </div>
+                <div class="produto-info">
+                    <h3>Bola de Futebol de Campo</h3>
+                    <p>R$ 189,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="equipamentos"
+                     data-descricao="Kit completo para treinos de velocidade, marcação e coordenação. Os materiais são leves, fáceis de transportar e podem ser utilizados em exercícios individuais ou coletivos. Ideais para organizar atividades e melhorar o desempenho dos atletas.">
+                <div class="produto-imagem">
+                    <img src="img/cones.jpg" alt="Kit de Treino Completo">
+                </div>
+                <div class="produto-info">
+                    <h3>Kit de Cones Esportivos</h3>
+                    <p>R$ 69,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="equipamentos"
+                     data-descricao="Kit de coletes esportivos indicado para dividir equipes durante treinos e partidas. Possui material leve, confortável e fácil de utilizar sobre o uniforme. Ideal para professores, treinadores e jogadores que participam de atividades coletivas.">
+                <div class="produto-imagem">
+                    <img src="img/coletes.jpg" alt="Kit de Coletes Esportivos">
+                </div>
+                <div class="produto-info">
+                    <h3>Kit de Coletes Esportivos</h3>
+                    <p>R$ 139,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="equipamentos"
+                     data-descricao="Mini gol portátil indicado para treinos de finalização e partidas recreativas. Seu tamanho facilita a montagem e o transporte, permitindo realizar atividades em diferentes espaços. Ideal para melhorar a precisão dos chutes e desenvolver exercícios de futebol.">
+                <div class="produto-imagem">
+                    <img src="img/mini-gol.jpg" alt="Mini Gol Portátil">
+                </div>
+                <div class="produto-info">
+                    <h3>Mini Gol Portátil</h3>
+                    <p>R$ 249,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+
+            <!-- ACESSÓRIOS -->
+
+            <article class="produto"
+                     data-categoria="acessorios"
+                     data-descricao="Organize e transporte suas chuteiras com praticidade e segurança! O Porta-Chuteiras Mizuno possui design esportivo nas cores preto, branco e vermelho, além de alças resistentes que facilitam o transporte. Ideal para proteger suas chuteiras e manter seus equipamentos organizados durante treinos, partidas e viagens.">
+                <div class="produto-imagem">
+                    <img src="img/porta-chuteira.jpg" alt="Porta Chuteiras">
+                </div>
+                <div class="produto-info">
+                    <h3>Escada de Agilidade</h3>
+                    <p>R$ 129,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="acessorios"
+                     data-descricao="Garrafa térmica personalizada, prática para manter sua bebida na temperatura desejada durante treinos e partidas. Possui formato fácil de transportar e é uma ótima opção para acompanhar os atletas nas atividades esportivas e no dia a dia.">
+                <div class="produto-imagem">
+                    <img src="img/garrafa.jpg" alt="Garrafa Térmica Personalizada">
+                </div>
+                <div class="produto-info">
+                    <h3>Garrafa Térmica Personalizada</h3>
+                    <p>R$ 79,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="acessorios"
+                     data-descricao="Meião esportivo desenvolvido para proporcionar conforto durante treinos e partidas de futebol. Seu tecido oferece ajuste firme e ajuda a manter as caneleiras posicionadas. Ideal para jogadores que procuram praticidade e conforto durante o jogo.">
+                <div class="produto-imagem">
+                    <img src="img/meiao.jpg" alt="Meião Esportivo">
+                </div>
+                <div class="produto-info">
+                    <h3>Meião Esportivo</h3>
+                    <p>R$ 39,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="acessorios"
+                     data-descricao="Caneleira esportiva indicada para proteger as pernas durante partidas e treinos de futebol. Seu formato foi desenvolvido para oferecer proteção sem prejudicar os movimentos. Um acessório importante para jogar com mais segurança e conforto.">
+                <div class="produto-imagem">
+                    <img src="img/caneleira.jpg" alt="Caneleira Esportiva">
+                </div>
+                <div class="produto-info">
+                    <h3>Caneleira Esportiva</h3>
+                    <p>R$ 59,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+            <article class="produto"
+                     data-categoria="acessorios"
+                     data-descricao="A sacola Nike Brasilia mantém todo o equipamento de treino e outros itens ao seu alcance. Um compartimento lateral armazena os tênis separadamente, enquanto os bolsos internos e externos ajudam a manter a organização. Use-a para ir à academia ou para viajar no fim de semana. A gente pensa em tudo.">
+                <div class="produto-imagem">
+                    <img src="img/bolsa.jpg" alt="Bolsa Esportiva Nike">
+                </div>
+                <div class="produto-info">
+                    <h3>Bolsa Esportiva</h3>
+                    <p>R$ 149,00</p>
+                    <button>Ver produto</button>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- JANELA DE DETALHES -->
+        <dialog id="detalhesProduto">
+
+            <h2 id="nomeDetalhes"></h2>
+
+            <img id="imagemDetalhes" alt="Imagem do produto">
+
+            <p id="descricaoDetalhes"></p>
+
+            <p id="precoDetalhes"></p>
+
+            <button id="adicionarCarrinho" aria-label="Adicionar ao carrinho">
+                <i data-lucide="shopping-cart"></i>
+            </button>
+
+            <button id="fecharDetalhes">Fechar</button>
+
+        </dialog>
+
+    </main>
+
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

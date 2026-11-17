@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol Grife | Início</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Futebol Grife</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <div class="acoes-header">
+
+            <button id="tema" aria-label="Mudar tema">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button id="abrirCarrinho" aria-label="Abrir carrinho">
+                <i data-lucide="shopping-cart"></i>
+                <span id="quantidadeCarrinho">0</span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Bem-vindo à Futebol Grife</h2>
+            <p>Encontre os melhores produtos para seu futebol!</p>
+        </section>
+
+        <section class="bento-grid">
+
+            <a href="produtos.html?categoria=chuteiras" class="card chuteira">
+                <h2>Chuteiras</h2>
+                <p>Encontre a chuteira ideal para seu jogo.</p>
+            </a>
+
+            <a href="produtos.html?categoria=vestuario" class="card vestuario">
+                <h2>Vestuário</h2>
+                <p>Camisas e roupas esportivas.</p>
+            </a>
+
+            <a href="produtos.html?categoria=equipamentos" class="card equipamentos">
+                <h2>Equipamentos</h2>
+                <p>Produtos para suas partidas.</p>
+            </a>
+
+            <a href="produtos.html?categoria=acessorios" class="card acessorios">
+                <h2>Acessórios</h2>
+                <p>Complete seu treino com os melhores acessórios.</p>
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
